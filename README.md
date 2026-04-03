@@ -79,7 +79,10 @@ added classes in palette component also added a palette title add blocks.
 added palete css and made responsive with grid layout.
 
 now i will create repo on github and deploy it.
-
+created repo.
+now deploying on vercel.
+deployment done.
+now commiting again to send this two new line. 
 
 *****Key to be imroved in this project***
 we can show preview like block.content right now we are showing only input value.
