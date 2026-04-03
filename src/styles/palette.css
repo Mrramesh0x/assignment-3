@@ -1,0 +1,75 @@
+.palette-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.palette-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+}
+
+.palette-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.palette-btn {
+  flex: 1;
+  min-width: 110px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.palette-btn:hover {
+  background: #0056b3;
+}
+
+.palette-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+  .palette-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .palette-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  .palette-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .palette-btn {
+    width: 100%;
+    min-width: auto;
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+

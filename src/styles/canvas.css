@@ -1,0 +1,100 @@
+.canvas-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.canvas-area {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.sortable-block {
+  width: 100%;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #d9d9d9;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.drag-handle {
+  width: 100%;
+  cursor: grab;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.drag-handle:active {
+  cursor: grabbing;
+}
+
+.block-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.block-input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
+}
+
+
+@media (max-width: 1024px) {
+  .canvas-area {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .canvas-container {
+    padding: 15px;
+  }
+
+  .canvas-area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .sortable-block {
+    padding: 14px;
+  }
+
+  .drag-handle {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .block-input {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .canvas-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
